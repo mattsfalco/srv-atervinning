@@ -17,8 +17,8 @@ Main Container Types:
 Here is an example of what to add to your sensor section in configuration.yaml: 
  ```yaml
  - platform: srv
-   street: Vädersjövägen 25A
-   city: Tungelsta
+   street: Runstensvägen 1
+   city: Handen
  ```
 
 Note: Exact street required in order to fetch the correct containers.

@@ -1,16 +1,11 @@
 {
   "domain": "srv",
-  "name": "SRV \u00c5tervinning",
+  "name": "SRV Återvinning",
   "version": "1.0.0",
   "codeowners": [
     "@mattsfalco"
   ],
-  "config_flow": true,
-  "dependencies": [],
-  "documentation": "https://www.home-assistant.io/integrations/srv",
-  "homekit": {},
-  "iot_class": "cloud_polling",
-  "requirements": [],
-  "ssdp": [],
-  "zeroconf": []
+  "documentation": "https://github.com/mattsfalco/srv-artervinning/blob/main/README.md",
+  "issue_tracker": "https://github.com/mattsfalco/srv-artervinning/issues",
+  "iot_class": "cloud_polling"
 }
