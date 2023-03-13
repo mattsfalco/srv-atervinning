@@ -37,7 +37,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None) -> None:
     containers = CustomerData().get_srv_data(sensor_street, sensor_city)
     for container in containers:
         print(str(container))
-        entities.append(VattenAvfallSensor(container))
+        entities.append(SrvSensor(container))
 
     add_entities(entities)
 
@@ -59,7 +59,7 @@ class CustomerData:
         ).json()["results"][0]["containers"]
 
 
-class VattenAvfallSensor(Entity):
+class SrvSensor(Entity):
     """Representation of a Sensor."""
 
     def __init__(self, container) -> None:
@@ -75,6 +75,7 @@ class VattenAvfallSensor(Entity):
         self._address = self._data["address"]
         self._city = self._data["city"]
         self._zip_code = self._data["zipCode"]
+        self._customer_id = self._data["customerId"]
         self._calendars = self._data["calendars"]
 
     @property
@@ -115,9 +116,12 @@ class VattenAvfallSensor(Entity):
         """All remaining fields of interest."""
         attr = {}
         attr["container_id"] = self._unique_id
+        attr["customer_id"] = self._customer_id
+        attr["content_type"] = self._content_type
         attr["address"] = self._address
         attr["city"] = self._city
         attr["property_code"] = self._property_code
         attr["zip_code"] = self._zip_code
         attr["calendars"] = self._calendars
+
         return attr
