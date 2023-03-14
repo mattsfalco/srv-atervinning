@@ -1,11 +1,11 @@
 {
   "domain": "srv",
   "name": "SRV Återvinning",
-  "version": "1.0.0",
   "codeowners": [
     "@mattsfalco"
   ],
   "documentation": "https://github.com/mattsfalco/srv-artervinning/blob/main/README.md",
+  "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/mattsfalco/srv-artervinning/issues",
-  "iot_class": "cloud_polling"
+  "version": "1.0.0"
 }
