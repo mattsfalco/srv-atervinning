@@ -3,7 +3,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![BuyMeCoffee][buymecoffeebedge]][buymecoffee]
 
-# Home Assistant SRV Årtervinning Integration
+# Home Assistant SRV Återvinning Integration
 Integration for Home Assistant that generates sensors for individual containers serviced by SRV Årtervinning AB.
 
 This works in Southern Stockholm (Södertörn) in the following counties (kommuner):
