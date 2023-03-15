@@ -6,7 +6,7 @@
 # Home Assistant SRV Årtervinning Integration
 Integration for Home Assistant that generates sensors for individual containers serviced by SRV Årtervinning AB.
 
-This works in Southern Stockholm in the following counties (kommuner):
+This works in Southern Stockholm (Södertörn) in the following counties (kommuner):
  - Botkyrka
  - Haninge
  - Huddinge
